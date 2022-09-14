@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Scikraft Education and Enginerring Design Pvt .Ltd- Bangaluru</title>
+  </head>
+  <body>
+    
+  <!---Nav bar-->
+  <!-- Navbar goes here -->
+  <nav class="bg-white shadow-lg">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between">
+        <div class="flex space-x-7">
+          <div>
+            <!-- Website Logo -->
+            <a href="#" class="flex items-center py-4 px-2">
+              <img src="/img/Scikraft_Logo-1.jpg" alt="Logo">
+              </a>
+
+              <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+              </span>
+          </div>
+          <!-- Primary Navbar items -->
+          <div class="hidden md:flex items-center space-x-1">
+            <a href="" class="py-4 px-2 text-red-500 hover:border-b-4 border-red-500 font-semibold ">KNOW US</a>
+            <a href="" class="py-4 px-2 text-red-500 hover:border-b-4 border-red-500 font-semibold hover:text-red-500 transition duration-300">SOLUTIONS</a>
+            <a href="" class="py-4 px-2 text-red-500 hover:border-b-4 border-red-500 font-semibold hover:text-red-500 transition duration-300">CAREERS</a>
+            <a href="" class="py-4 px-2 text-red-500 hover:border-b-4 border-red-500 font-semibold hover:text-red-500 transition duration-300">CONTACT US</a>
+          </div>
+        </di v>
+        <!-- Secondary Navbar items -->
+        <div class="hidden md:flex items-center space-x-3 ">
+          <a href="" class="py-2 px-2 font-medium text-red-500 rounded hover:bg-red-500 hover:text-white transition duration-300"></a>
+          
+        </div>
+        <!-- Mobile menu button -->
+        <div class="md:hidden flex items-center">
+          <button class="outline-none mobile-menu-button" onclick="Menu(this)">
+          <svg class="w-6 h-6 text-red-500 hover:text-red-500 "
+            x-show="!showMenu"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+        </div>
+      </div> 
+    </div>
+    <!-- mobile menu -->
+    <div class="hidden mobile-menu">
+      <ul class="">
+        <div class="flex justify-between hover:bg-red-400">
+        <li class="active"><a href="#" class="block text-sm px-2 py-4 text-red-600 hover:bg-red-400 font-semibold">
+          KNOW US</a></li>
+          <button class="blue-900">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+            </svg>
+          </button>
+      </div>
+      <div class="flex justify-between hover:bg-red-500">
+        <li><a href="#services" class="block text-sm px-2 py-4 text-red-600 hover:bg-red-400 font-semibold transition duration-300">SOLUTIONS</a></li>
+          <button class="blue-900">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+            </svg>
+          </button>
+      </div>
+      <div class="flex justify-between hover:bg-red-500">
+        
+        <li><a href="#about" class="block text-sm px-2 py-4 text-red-600 hover:bg-red-400 font-semibold transition duration-300">CAREERS</a></li>
+          <button class="blue-900">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+            </svg>
+          </button>
+      </div>
+      
+        <li><a href="#contact" class="block text-sm px-2 py-4 text-red-600 hover:bg-red-400 font-semibold transition duration-300">CONTACT US</a></li>
+      </ul>
+    </div>
+    <script>
+      function Menu(e){
+        const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      }); 
+      }
+      
+    </script>
+
+
+  </nav>
+  
+  
+  <!---Hero section-->
+  <section>
+    
+      <div class="relative">
+       
+          <ul id="slider">
+            <li class="h-[100vh] relative">
+              <img class="h-full w-full object-cover" src="/img/A-Banner.jpg" alt="">
+              <div class="absolute top-0 left-0 w-full h-full flex">
+                <h2 class="text-4xl font-bold text-white my-auto w-full text-center px-20">Ingenious Design Of <br> Advanced Science Lab Equipment</h2>
+              </div>
+            </li>
+            <li class="h-[100vh] relative hidden">
+              <img class="h-full w-full object-cover" src="/img/C-Banner.jpeg" alt="">
+              <div class="absolute top-0 left-0 w-full h-full flex">
+                <h2 class="text-4xl font-bold text-white my-auto w-full text-center px-20">Enhance Science Learning <br> With Modular Rig-Up Kits</h2>
+              </div>
+            </li>
+            
+          </ul>
+        
+        <div class="absolute px-5 flex h-full w-full top-0 left-0">
+          <div class="my-auto w-full flex justify-between">
+            <button onclick="prev()" class="bg-white p-3 rounded-full bg-opacity-80 shadow-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+              </svg>
+            </button>
+            <button onclick="next()" class="bg-white p-3 rounded-full bg-opacity-80 shadow-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+  
+  </section>
+  <script src="./main.js">
+
+  </script>
+
+  <!---section 2-->
+
+  <section id="introduction" class=" bg-gradient-to-r bg-yellow-300 lg:p-10 md:p-5">
+    <div class="grid md:grid-cols-2 grid-cols-1">
+      <div id="intro-image"
+        class="flex flex-col justify-center align-middle lg:p-10 md:p-5 p-3 wow animate__animated animate__bounceInLeft animate__slower">
+        <img src="./img/Intro.png" />
+      </div>
+      <div id="intro-text"
+        class="flex flex-col justify-center align-middle text-center md:text-left p-2 lg:p-10 md:p-5 mb-5 wow animate__animated animate__bounceInLeft animate__slower">
+        <h3 class="font-bold">ENHANCING SCIENCE EDUCATION</h3>
+      <p class="font--medium">Scikraft is on a pursuit to enhance science education at school and college
+        levels, by interfacing technology and education. Scikraft specialises
+        in designing, developing of interactive learning equipment, tools, solutions for
+        for K–12 and college level in science education, and innovative teaching techniques.</p>
+        <div class="flex space-x-5 mt-5 justify-center md:justify-start">
+          <button class="bg-red-500 p-3 rounded-full bg-opacity-80 shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!---Section 3-->
+  <section id="introduction" class=" bg-gradient-to-r bg-sky-400 lg:p-10 md:p-5">
+    <div class="grid md:grid-cols-2 grid-cols-1">
+      
+      <div id="intro-text"
+        class="flex flex-col justify-center align-middle text-center md:text-left p-2 lg:p-10 md:p-5 mb-5 wow animate__animated animate__fadeInTopRight animate__slower">
+        <h3 class="font-bold">INGENUITY</h3>
+      <p class="font--medium">Inquiry and ingenuity are the core strands of Scikraft's DNA! Our keen sense of inquisitiveness is our motivation to explore new and effective ways to learn science and thereby design the optimal and modular tools to enable that.
+
+      </p>
+        <div class="flex space-x-5 mt-5 justify-center md:justify-start">
+          <button class="bg-red-500 p-3 rounded-full bg-opacity-80 shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id="intro-image"
+        class="flex float-left flex-col justify-center align-middle lg:p-10 md:p-5 p-3 wow animate__animated animate__fadeInTopRight animate__slower">
+        <img src="./img//Ingenuity_Home_Page.png" />
+      </div>
+      
+    </div>
+  </section>
+
+    
+</body>
+
+    </html>
